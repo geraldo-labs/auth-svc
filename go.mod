@@ -6,6 +6,7 @@ require (
 	github.com/gofiber/fiber/v2 v2.8.0
 	github.com/jackc/pgproto3/v2 v2.0.7 // indirect
 	github.com/jackc/pgx/v4 v4.11.0 // indirect
+	github.com/kelseyhightower/envconfig v1.4.0 // indirect
 	github.com/lib/pq v1.6.0 // indirect
 	go.uber.org/multierr v1.6.0 // indirect
 	go.uber.org/zap v1.16.0

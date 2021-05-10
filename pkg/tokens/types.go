@@ -1,6 +1,9 @@
 package tokens
 
-import "strings"
+import (
+	"database/sql"
+	"strings"
+)
 
 type Header struct {
 	Key   string `json:"key"`
@@ -17,3 +20,12 @@ func (h *Header) Set(key, value string) {
 	}
 }
 
+type Token struct {
+	Type           string `json:"type"`
+	Value          string `json:"value"`
+	ExpirationDate sql.NullTime
+}
+
+func (t Token) TableName() string {
+	return "tokens"
+}
